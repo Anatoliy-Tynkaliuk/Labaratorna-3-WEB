@@ -1,0 +1,233 @@
+body {
+    margin: 0 auto;
+    position: relative;
+    
+}
+
+.navigation {
+    display: flex;
+    background-color: #fffefe;
+    width: 900px;
+    box-shadow: 0 4px 10px rgb(65, 29, 131);
+    border-radius: 7px;
+    align-items: center;
+    position: fixed;    
+    top: 0; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    z-index: 5;
+}
+.navig{
+    margin-left: 190px;
+}
+
+
+.button-navig {
+    margin-right: 15px;
+    background-color: #060606;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+.button-navig:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.Corsina{
+    background-color: #ffffff;
+    border: none;
+}
+
+.image-card {
+    margin-top: 20px; 
+    padding:20px;
+
+}
+
+.image {
+    width: 375px;
+    height: 350px;
+    overflow: clip;
+}
+.nav_image {
+    margin-left: 25px;
+}
+
+.discount {
+    position: absolute;
+    top: 34%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg); 
+    font-size: 150px; 
+    color: white;
+    font-weight: bold;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7); 
+    letter-spacing: 10px;
+    transition: opacity 0.3s ease-in-out; 
+}
+
+
+.image-card:hover .discount {
+    opacity: 0; 
+}
+
+
+.image_and_text-container {
+    margin: 60px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    position: relative; 
+}
+
+
+.image-card:hover {
+    transform: scale(1.05); 
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.name {
+    font-size:30px;
+    margin-bottom: 0px
+}
+.hidden {
+    display: none;
+}
+
+.toggle-description {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px 0px 10px 0px;
+    
+}
+
+.toggle-description:hover {
+    background-color: #0056b3;
+}
+
+
+#cardsContainer {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+   
+}
+#advertisement {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+.modal-content {
+    background-color: white;
+    width: 60%;
+    max-width: 600px;
+    margin: 100px auto; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    position: relative;
+
+}
+
+.dismiss-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #060606;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.modal {
+    display: none;
+}
+.modal-content {
+    text-align: center;
+    width: 60%;
+    max-width: 600px;
+    margin: 100px auto; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    position: relative;
+}
+
+.cart-item-content {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 10px;
+    box-shadow: 10px 8px 5px rgba(0, 0, 0, 0.1);
+    
+  }
+  
+  .cart-item-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+  
+  .cart-item-details {
+    flex: 1;
+  }
+  
+  .cart-item-details h4 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .cart-item-details p {
+    margin: 5px 0;
+    font-size: 16px;
+  }
+  
+  .cors-button{
+    height: 25px;
+    width: 25px;
+  }
+
+  .tot-price{
+    font-size: 24px;
+    margin: 10px 0 10px 0;
+  }
+
+  .butt-corsina{
+    margin-bottom: 15px;
+  }
+
+  #filter-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px 0 50px 0;
+}
+
+#filter-panel label, #filter-panel input, #filter-panel select {
+    margin: 10px;
+}
+
+#popularChart {
+    width: 500px !important;
+    height: 500px !important;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
