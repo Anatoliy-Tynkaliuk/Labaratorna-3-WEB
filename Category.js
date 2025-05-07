@@ -23,7 +23,7 @@ function loadPosts(category = "Всі товари") {
 
     let filteredPosts = posts.filter(post => {
         const maxPrice = parseInt(priceRange.value);
-        const postPrice = parseInt(post.price.replace(/\D/g, '')); 
+        const postPrice = parseInt(post.price); 
         if (postPrice > maxPrice) {
             return false;
         }
@@ -48,9 +48,9 @@ function loadPosts(category = "Всі товари") {
     } else if (sortValue === "name-desc") {
         filteredPosts.sort((a, b) => b.title.localeCompare(a.title));
     } else if (sortValue === "price-asc") {
-        filteredPosts.sort((a, b) => parseInt(a.price.replace(/\D/g, '')) - parseInt(b.price.replace(/\D/g, '')));
+        filteredPosts.sort((a, b) => parseInt(a.price) - parseInt(b.price));
     } else if (sortValue === "price-desc") {
-        filteredPosts.sort((a, b) => parseInt(b.price.replace(/\D/g, '')) - parseInt(a.price.replace(/\D/g, '')));
+        filteredPosts.sort((a, b) => parseInt(b.price) - parseInt(a.price));
     }
 
 
